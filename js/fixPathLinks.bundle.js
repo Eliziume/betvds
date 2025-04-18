@@ -1,0 +1,1 @@
+document.querySelectorAll("a[href]").forEach((t=>{const e=t.getAttribute("href");if(e.startsWith("http")||e.startsWith("#")||e.startsWith("/"))return;const r=e.replace(/(\.\/)?((\.\.\/)+)/,"./");t.setAttribute("href",r)}));
